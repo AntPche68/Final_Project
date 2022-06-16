@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Title.module.sass'
 import Button from '../UI/Button/Button'
+import Round from '../UI/Round/Round'
 
 export default function Title() {
   return (
@@ -22,6 +23,11 @@ export default function Title() {
             <div className={s.btns}>
                 <Button>Order Today</Button>
                 <a href="#">Read Free Demo</a>
+            </div>
+            <div className={s.round}>
+                <Round text='250 pages'>Pages:</Round>
+                <Round text='10 Hours'>Length:</Round>
+                <Round text='4.5/5 (305 ratings)'>Rating:</Round> 
             </div>
 
         </div>
