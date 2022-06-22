@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import AboutTheAuthor from './components/AboutTheAuthor/AboutTheAuthor';
+import GetBookCopyToday from './components/GetBookCopyToday/GetBookCopyToday';
 import Main from './components/Main/Main';
 import TheAuthorsBook from './components/TheAuthorsBook/TheAuthorsBook';
+import TrustedByTheBest from './components/TrustedByTheBest/TrustedByTheBest';
+import WhatWillYouLearn from './components/WhatWillYouLearn/WhatWillYouLearn';
 // import {getBooks} from './requests';
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <Main />
       <TheAuthorsBook />
       <AboutTheAuthor />
+      <TrustedByTheBest />
+      <GetBookCopyToday />
+      <WhatWillYouLearn />
     </div>
   );
 }
