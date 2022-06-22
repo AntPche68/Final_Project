@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import AboutTheAuthor from './components/AboutTheAuthor/AboutTheAuthor';
+import Articles from './components/Articles/Articles';
 import GetBookCopyToday from './components/GetBookCopyToday/GetBookCopyToday';
 import Main from './components/Main/Main';
 import TheAuthorsBook from './components/TheAuthorsBook/TheAuthorsBook';
@@ -26,6 +27,7 @@ function App() {
       <TrustedByTheBest />
       <GetBookCopyToday />
       <WhatWillYouLearn />
+      <Articles />
     </div>
   );
 }
