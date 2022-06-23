@@ -25,5 +25,13 @@ const Learning = sequelize.define("Learning", {
     text: {type: STRING, allowNull: false},
 })
 
+const Article = sequelize.define('Article', {
+    id: {type: INTEGER, primaryKey: true, autoIncrement: true},
+    image: {type: STRING, allowNull: false},
+    title: {type: STRING, allowNull: false},
+    abstract: {type: STRING, allowNull: false},
+    date: {type: STRING, allowNull: false}
+})
 
-module.exports = {Book, Partner, Learning} 
+
+module.exports = {Book, Partner, Learning, Article} 
