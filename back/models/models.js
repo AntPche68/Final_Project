@@ -12,7 +12,12 @@ const Book = sequelize.define('Book', {
     type: {type: STRING, allowNull: false}
 })
 
+const Partner = sequelize.define("Partner", {
+    id: {type: INTEGER, primaryKey: true, autoIncrement: true},
+    logo: {type: STRING, allowNull: false},
+    title: {type: STRING, allowNull: false},
+    abstract: {type: STRING, allowNull: false},
+})
 
 
-
-module.exports = {Book} 
+module.exports = {Book, Partner} 

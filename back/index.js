@@ -8,10 +8,12 @@ const PORT = process.env.PORT;
 const app = express();
 
 const authorsBookRouter = require('./routes/authorsBookRouter');
+const partnerRouter = require('./routes/partnerRouter');
 
 app.use(cors());
 app.use(express.json());
 app.use('/api/book', authorsBookRouter);
+app.use('/api/partner', partnerRouter);
 
 
 const start = async () => {
