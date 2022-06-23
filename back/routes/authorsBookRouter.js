@@ -1,8 +1,9 @@
 const Router = require("express");
 const router = new Router();
 
-const { getAll } = require('../controllers/authorsBookController');
+const { create, getAll } = require('../controllers/authorsBookController');
 
-router.get("/all", getAll);
+router.post('/add', create);
+router.get('/all', getAll);
 
 module.exports = router;
