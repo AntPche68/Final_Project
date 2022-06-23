@@ -16,13 +16,7 @@ export default function Books() {
 
   return (
     <div className={s.book}>
-      <div>
-        <h2>The Author's Book</h2>
-        <div>
-          
-        </div>
-      </div>
-
+      
     </div>
   )
 }
