@@ -9,11 +9,13 @@ const app = express();
 
 const authorsBookRouter = require('./routes/authorsBookRouter');
 const partnerRouter = require('./routes/partnerRouter');
+const learningRouter = require('./routes/learningRouter');
 
 app.use(cors());
 app.use(express.json());
 app.use('/api/book', authorsBookRouter);
 app.use('/api/partner', partnerRouter);
+app.use('/api/learning', learningRouter);
 
 
 const start = async () => {
