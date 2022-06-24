@@ -16,16 +16,16 @@ export default function TrustedByTheBest() {
 
   return (
     <div className={s.main}>
-        <h2>Trusted By The Best</h2>
-        <div>
-          {partners.map(t=>
-            <div key={t.id}>
-              <img src={process.env.PUBLIC_URL + t.logo} alt="partners" />
-              <p>{t.title}</p>
-              <p>{t.abstract}</p>
-            </div>  
-            )}
-        </div>
+      <p className={s.text}>Trusted By The Best</p>
+      <div className={s.card}>
+        {partners.map(t=>
+          <div className={s.partner} key={t.id}>
+            <img src={process.env.PUBLIC_URL + t.logo} alt="partners" />
+            <p className={s.title}>{t.title}</p>
+            <p className={s.abstract}>{t.abstract}</p>
+          </div>  
+          )}
+      </div>
     </div>
   )
 }
