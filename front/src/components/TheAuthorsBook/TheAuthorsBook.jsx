@@ -16,19 +16,19 @@ export default function Books() {
   }, [])
 
   return (
-    <div className={s.authors_book}>
+    <div className={s.main}>
         <h1>The Author's Book</h1>
-        <div>
+        <div className={s.authors_book}>
          {books.map(t=>
-            <div key={t.id}>
-            <div>
-              <img src={process.env.PUBLIC_URL + t.cover} alt="book" />
+            <div className={s.books} key={t.id}>
+              <div className={s.image}>
+                <img src={process.env.PUBLIC_URL + t.cover} alt="book" />
               </div>
-              <div>
-                <p>{t.title}</p>  
-                <p>{`$ ${t.price} USD`}</p>  
-                <p>{t.abstract}</p>  
-                <p>{t.type}</p>
+              <div className={s.book}>
+                <p className={s.title}>{t.title}</p>  
+                <p className={s.price}>{`$ ${t.price} USD`}</p>  
+                <p className={s.abstract}>{t.abstract}</p>  
+                <p className={s.type}>{t.type}</p>
               </div>
             </div>  
             )}
