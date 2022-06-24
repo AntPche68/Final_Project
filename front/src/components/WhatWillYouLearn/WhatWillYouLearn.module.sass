@@ -2,7 +2,7 @@
     height: 1075px
 
     .title
-        padding: 10%
+        padding: 7em 
 
         h2
             font-family: 'Cardo'
@@ -26,10 +26,49 @@
 
     .section
         display: grid
-        grid-template-columns: repeat(2, 1fr)    
+        grid-template-columns: repeat(2, 1fr)
+        justify-items: center    
 
         .elements
-            background-color: #6e6868
+            margin: 75px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            align-items: center
+            grid-gap: 30px
+
+            .step
+                background-color: #F4F8FF
+                width: 300px
+                height: 270px
+
+
+                .number
+                    margin: 30px 0 5px 30px
+                    height: 50px
+                    width: 50px
+                    background-color: #FFCA42
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 0px solid transparent
+                    border-radius: 100%
+                    font-family: 'Cardo'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 23px
+                    line-height: 29px
+                    color: #1B3764
+
+                .text
+                    padding: 10px 50px 10px 30px
+                    font-family: 'Cardo'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 24px
+                    line-height: 34px
+                    color: #1B3764  
+
 
 
         .image
@@ -39,14 +78,13 @@
 
             img
                 position: relative
-                width: 100%
-                height: auto
 
-            &::after
+
+            &::before
                 content: ''
                 position: absolute
-                height: 130%
-                width: 92%
+                height: 115%
+                width: 82%
                 top: 10%
                 left: 10%
                 border: 10px solid #FFCA42

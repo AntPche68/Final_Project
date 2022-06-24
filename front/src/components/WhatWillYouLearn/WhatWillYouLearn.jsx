@@ -24,9 +24,9 @@ export default function WhatWillYouLearn() {
         <div className={s.section}>
             <div className={s.elements}>
               {learnings.map(t=>
-                <div key={t.id}>
-                   <div>{t.number}</div> 
-                   <div>{t.text}</div> 
+                <div className={s.step} key={t.id}>
+                   <div className={s.number}>{t.number}</div> 
+                   <div className={s.text}>{t.text}</div> 
                 </div>
                 )}
             </div>
